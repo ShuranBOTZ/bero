@@ -882,7 +882,7 @@ let buttons = [
 ]
 await ohlx.sendButtonText(m.chat, buttons, `Auto Download Tiktok
 
-Title : ${atdl.title}`, `Auto Downloader By OHLX`, ftext)
+Title : ${atdl.title}`, `Auto Downloader `, ftext)
 }
 }
 
@@ -957,13 +957,13 @@ ohlx.sendImage(m.chat, buff, `${getohxdata.response}`, m)
 const seactions = [{
 title: `❏ ▮𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 」❏ `,
 rows: [
-{title: `🔖 〉ɞ 『 Sewa BOT 』`, rowId: ".sewabot", description: "✧ Menampilkan list harga sewa BOT"},
-{title: `🌟 〉ɞ 『 UP Premium 』`, rowId: ".premium", description: "✧ Menampilkan list harga upgrade premium"},
-{title: `♣ ∫ » Script «`, rowId: ".sc", description: '✧ Script Bot Wa ini'},
- {title: `💰 ∫ » Donasi «`, rowId: ".donasi", description: '✧ Support BOT agar on 1 Minggu non stop'},
+{title: `🔖 〉ɞ 『 kosong 』`, rowId: "-", description: "✧ kosong"},
+{title: `🌟 〉ɞ 『 kosong 』`, rowId: "-", description: "✧ kosong"},
+{title: `♣ ∫ » Script «`, rowId: ".sc", description: '✧ Ini sc Bot Nya Kak :>'},
+ {title: `💰 ∫ » kosong «`, rowId: "-", description: '✧ kosong'},
  {title: `💌)ഒ Owner`, rowId: ".owner", description: "✧ Ini Room Developer ku ^~^"},
-	{title: `🗣)ഒ Request Fitur`, rowId: ".request", description: "✧ Request Fitur menarik ke BOT"},
-	{title: `⫹💌 › 𐐪-〚 Jasa RENZ 〛-𐑂`, rowId: ".mjasa", description: "╰► Mau beli jasa ya kak?"},
+	{title: `🗣)ഒ kosong`, rowId: "kosong", description: "✧ kosong"},
+	{title: `⫹💌 › 𐐪-〚 kosong 〛-𐑂`, rowId: ".kosong", description: "╰► kosong"},
 ]
 },
 {
@@ -990,10 +990,10 @@ rows: [
 ]
 },
 {
-title: `❏ ▮𝗔𝗽𝗮 𝗜𝘁𝘂 𝗦𝗲𝘄𝗮 & 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 」`,
+title: `❏ ▮kosong 」`,
 rows: [
-{title: `🔖 APA ITU SEWA BOT`, rowId: ".sewaohx apaitusewa", description: "╰► Sewa adalah"},
-{title: `🔖 APA ITU PREMIUM`, rowId: "${prefix}premohx apaitupremium", description: "╰► Premium adalah"},
+{title: `🔖 kosong`, rowId: "kosong", description: "╰► kosong"},
+{title: `🔖 kosong`, rowId: "kosong", description: "╰► kosong"},
 ]}]
 const listMenuMessage = { 
 text: `╭──❍「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❍
@@ -1003,7 +1003,7 @@ text: `╭──❍「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❍
 ╰──❍
 
 ╭──❍「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❍
-├ *Nama* : RENZ BOT
+├ *Nama* : 「𝑺𝒉𝒖𝒓𝒂𝒏𝑩𝑶𝑻𝒁 」
 ├ *Mode* : ${ohlx.public ? 'Public' : `Self`}
 ├ *Prefix* :「 MULTI-PREFIX 」
 ├ *Jumlah User* : ${pendaftar.length} User
@@ -1019,7 +1019,7 @@ text: `╭──❍「 𝙄𝙉𝙁𝙊 𝙐𝙎𝙀𝙍 」❍
 ╰──❍`,
 mentions: [sender],
 footer: fake,
-buttonText: 'LIST MENU',
+buttonText: 'ʟιsт мᴇɴu',
 sections: seactions,
 listType: 1}
 
@@ -1047,14 +1047,14 @@ await ohlx.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch
 }
 break
             case 'mallmenu': {
-sarch = `┌──⭓ *ALL Menu*
+sarch = `┌──⭓ *ᴀʟʟ мᴇɴu*
 │
 │⭔🅞 = Khusus Owner
 │⭔🅖 = Khusus Group
 │⭔🅕 = Free User
 │⭔🅟 = Premium
 
-   Owner Menu
+   owɴᴇʀ мᴇɴu
 │⭔ ${prefix}self 🅞
 │⭔ ${prefix}public 🅞
 │⭔ ${prefix}bc 🅞
@@ -1077,7 +1077,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}ban add 🅞
 │⭔ ${prefix}ban del 🅞
 
-   Other Menu
+   oтнᴇʀ мᴇɴu
 │⭔ ${prefix}owner 🅕
 │⭔ ${prefix}jadibot 🅟
 │⭔ ${prefix}listjadibot 🅟
@@ -1119,7 +1119,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}caridoi 🅟
 │⭔ ${prefix}cariteman 🅟
 
-   Download Menu
+   ᴅowɴʟoᴀᴅ мᴇɴu
 │⭔ ${prefix}tiktokvideo 🅕
 │⭔ ${prefix}tiktokaudio 🅕
 │⭔ ${prefix}ytsearch 🅕
@@ -1129,7 +1129,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}googles 🅕
 │⭔ ${prefix}happymod 🅕
 
-   Bug Menu
+   ʙuԍ мᴇɴu
 │⭔ ${prefix}send 🅞
 │⭔ ${prefix}spambugvip 🅞
 │⭔ ${prefix}santetpc 🅞
@@ -1158,7 +1158,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}jagoan 🅞
 │⭔ ${prefix}jagoanneon 🅞
 
-   Group Menu
+   ԍʀouᴘ мᴇɴu
 │⭔ ${prefix}antilink 🅖
 │⭔ ${prefix}antiwame 🅖
 │⭔ ${prefix}add 🅖
@@ -1170,7 +1170,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}opentime 🅖
 │⭔ ${prefix}closetime 🅖
 
-   Fun Group
+   ғuɴ ԍʀouᴘ
 │⭔ ${prefix}memek 🅖
 │⭔ ${prefix}bego 🅖
 │⭔ ${prefix}goblok 🅖
@@ -1269,7 +1269,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}cekkul 🅖
 │⭔ ${prefix}cekbapak 🅖
 
-   Random Foto
+   ʀᴀɴᴅoм ғoтo
 │⭔ ${prefix}aesthetic 🅟
 │⭔ ${prefix}ahegao 🅟
 │⭔ ${prefix}akira 🅟
@@ -1401,7 +1401,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}birb 🅟 
 │⭔ ${prefix}koala 🅟
 
-   Text Pro
+   тᴇxт ᴘʀo
 │⭔ ${prefix}candy 🅟 
 │⭔ ${prefix}christmas 🅟 
 │⭔ ${prefix}3dchristmas 🅟 
@@ -1460,7 +1460,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}1917 🅟 
 │⭔ ${prefix}leaves 🅟
 
-   Photo Oxy
+   ᴘнoтo oxʏ
 │⭔ ${prefix}shadow 🅟 
 │⭔ ${prefix}write 🅟 
 │⭔ ${prefix}romantic 🅟 
@@ -1489,7 +1489,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}quotesunder 🅟
 │⭔ ${prefix}shinetext 🅟
 
-   Ephoto 360
+   ᴇᴘнoтo 360
 │⭔ ${prefix}glitchtext 🅟
 │⭔ ${prefix}writetext 🅟
 │⭔ ${prefix}advancedglow 🅟
@@ -1521,7 +1521,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}galaxystyle 🅟
 │⭔ ${prefix}lighteffects 🅟
 
-   Random Cerpen
+   ʀᴀɴᴅoм cᴇʀᴘᴇɴ 
 │⭔ ${prefix}cerpen_sejarah 🅟
 │⭔ ${prefix}cerpen_sedih 🅟
 │⭔ ${prefix}cerpen_sastra 🅟
@@ -1571,14 +1571,14 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}cerpen_bahasadaerah 🅟
 │⭔ ${prefix}cerpen_anak 🅟
 
-   Random Video
+   ʀᴀɴᴅoм vιᴅᴇo
 │⭔ ${prefix}asupan 🅟
 │⭔ ${prefix}bocil 🅟
 │⭔ ${prefix}rikagusriani 🅟
 │⭔ ${prefix}hentavid 🅟
 │⭔ ${prefix}jjmeryani 🅟
 
-   Stalker Menu
+   sтᴀʟκᴇʀ мᴇɴu
 │⭔ ${prefix}igstalk 🅟
 │⭔ ${prefix}ffstalk 🅟
 │⭔ ${prefix}mlstalk 🅟
@@ -1586,7 +1586,7 @@ sarch = `┌──⭓ *ALL Menu*
 │⭔ ${prefix}ghstalk 🅟
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 } 
 break
@@ -1600,7 +1600,7 @@ sarch = `┌──⭓ *Asupan Menu*
 │⭔${prefix}jjmeryani
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 } 
 break
@@ -1769,7 +1769,7 @@ sarch = `┌──⭓ *Sound Menu*
 │⭔ ${prefix}sound160
 │⭔ ${prefix}sound161
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }                         
 break
@@ -1908,7 +1908,7 @@ sarch = `┌──⭓ *Jasa Menu*
 │⭔ ${prefix}koala 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -1925,7 +1925,7 @@ sarch = `┌──⭓ *downloader Menu*
 │⭔ ${prefix}happymod 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -1974,7 +1974,7 @@ sarch = `┌──⭓ * Menu lain nya*
 │⭔ ${prefix}cariteman 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2004,7 +2004,7 @@ sarch = `┌──⭓ *Owner Menu*
 │⭔ ${prefix}ban del 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2018,7 +2018,7 @@ sarch = `┌──⭓ *Cek Sosmed Menu*
 │⭔ ${prefix}ghstalk 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2054,7 +2054,7 @@ sarch = `┌──⭓ *Photo Oxy Menu*
 │⭔ ${prefix}shinetext 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2093,7 +2093,7 @@ sarch = `┌──⭓ *Jasa Menu*
 │⭔ ${prefix}lighteffects 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2159,7 +2159,7 @@ sarch = `┌──⭓ *Ephoto 360 Menu*
 │⭔ ${prefix}leaves 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2216,7 +2216,7 @@ sarch = `┌──⭓ *Cerpen Menu*
 │⭔ ${refix}ceren_anak 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2229,7 +2229,7 @@ sarch = `┌──⭓ *Sticker Menu*
 │⭔ ${prefix}smeme
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2244,7 +2244,7 @@ sarch = `┌──⭓ *Jasa Menu*
 │⭔ ${prefix}jasarun
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }             
 break
@@ -2255,7 +2255,7 @@ sarch = `┌──⭓ *Menfess Menu*
 │⭔ ${prefix}confess 628xxxxxxx|hai
 │
 └───────⭓`
-let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 } 
 break
@@ -2291,7 +2291,7 @@ sarch = `┌──⭓ *Virtex Menu*
 │⭔ ${prefix}jagoanneon 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }                           
 break
@@ -2312,7 +2312,7 @@ sarch = `┌──⭓ *Group Menu*
 │⭔ ${prefix}closetime 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 }  
 break
@@ -2418,7 +2418,7 @@ sarch = `┌──⭓ *Fun Group Menu*
 │⭔ ${prefix}cekbapak 
 │
 └───────⭓`
-let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.sewa', buttonText: { displayText: 'Sewa Bot✅' }, type: 1 },{ buttonId: '.donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+let buttons = [{ buttonId: '.menu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: '.ping', buttonText: { displayText: 'Speed' }, type: 1 }]
             await ohlx.sendButtonText(m.chat, buttons, sarch, nyoutube, m, {quoted: fkontak})       
 } 
 break
@@ -3358,12 +3358,12 @@ break
 case 'premium': case 'sewa': case 'buypremium': case 'sewabot':{
 const seactiones = [
 {
-title: `❏ SEWA BOT ✦------`,
+title: `❏ KOSONG ✦------`,
 rows: [
-{title: `🔖 1 MINGGU 2K`, rowId: `${prefix}sewaohx 1minggu`},
-{title: `🔖1 BULAN 5K`, rowId: `${prefix}sewaohx 1bulan`},
-{title: `🔖 PERMANENT 10K`, rowId: `${prefix}sewaohx permanent`},
-{title: `🔖 APA ITU SEWA BOT`, rowId: `${prefix}sewaohx apaitusewa`},
+{title: `🔖 KOSONG`, rowId: `KOSONG`},
+{title: `🔖 KOSONG`, rowId: `KOSONG`},
+{title: `🔖 KOSONG`, rowId: `KOSONG`},
+{title: `🔖 KOSONG`, rowId: `KOSONG`},
 ]
 },
 {
